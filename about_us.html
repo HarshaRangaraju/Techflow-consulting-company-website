@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        body{
+            padding: 20px;
+        }
+        .vimg{
+            display: flex;
+            width: 40%;
+            height: 40vh;
+        }
+        .himg{
+            display: none;
+            margin-left: auto ;
+            margin-right: auto;
+            width: 50%;
+            height: 28vh;
+
+        }
+        .vimg{
+            padding-right: 20px;
+        }
+        @media(max-width:800px){
+            .vimg{
+                display: none;
+            }
+            .himg{
+                display:flex;
+            }
+        }
+        header div :hover{
+            background-color: aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .second-section{
+            background-color: white;
+        }
+        .Team{
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .card{
+            margin: 15px;
+        }
+
+        .card:hover{
+            background-color: rgb(168, 162, 162);
+            font-size:large;
+        }
+        .Team img{
+            height: 250px;
+        }
+        body{margin-top:20px;}
+        .timeline-steps {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        .timeline-steps .timeline-step {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin: 1rem
+        }
+
+        @media (min-width:768px) {
+            .timeline-steps .timeline-step:not(:last-child):after {
+                content: "";
+                display: block;
+                border-top: .25rem dotted #3b82f6;
+                width: 3.46rem;
+                position: absolute;
+                left: 7.5rem;
+                top: .3125rem
+            }
+            .timeline-steps .timeline-step:not(:first-child):before {
+                content: "";
+                display: block;
+                border-top: .25rem dotted #3b82f6;
+                width: 3.8125rem;
+                position: absolute;
+                right: 7.5rem;
+                top: .3125rem
+            }
+        }
+
+        .timeline-steps .timeline-content {
+            width: 10rem;
+            text-align: center
+        }
+
+        .timeline-steps .timeline-content .inner-circle {
+            border-radius: 1.5rem;
+            height: 1rem;
+            width: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #3b82f6
+        }
+
+        .timeline-steps .timeline-content .inner-circle:before {
+            content: "";
+            background-color: #3b82f6;
+            display: inline-block;
+            height: 3rem;
+            width: 3rem;
+            min-width: 3rem;
+            border-radius: 6.25rem;
+            opacity: .5
+        }
+
+        .timeline{
+            background-color: #EEEEEE;
+        }
+    </style>
+    <header>
+        <div class="jumbotron jumbotron-fluid" style=" display:flex; justify-content: center;margin: 20px; padding: 20px;">
+            
+            <div class="container">
+              <h1 class="display-4">"Mission"</h1>
+              <br>
+              <p class="lead">Our mission is to empower businesses with innovative technology solutions that drive efficiency, growth, and digital transformation. We aim to deliver expert consulting services tailored to each client’s unique needs, helping them navigate the complexities of the digital landscape and achieve sustainable success. Through collaboration, cutting-edge technology, and a commitment to excellence, we enable our clients to unlock their full potential.</p>
+            </div>
+            <img class=" vimg" src="mission.jpg" alt="#">
+        </div>
+        <img class=" himg" src="mission.jpg" alt="#">
+
+        
+        <div class="jumbotron jumbotron-fluid" style=" display:flex; justify-content: center;margin: 20px; padding: 20px;">
+            <img class=" vimg" src="image.webp" alt="">
+            <div class="container">
+              <h1 class="display-4">"Vision"</h1>
+              <br>
+              <p class="lead">Our vision is to be the leading global partner for businesses seeking to thrive in the digital age. We aspire to revolutionize industries through innovative technology solutions and strategic consulting, driving positive change and creating lasting value. By fostering a culture of continuous learning and innovation, we aim to empower our clients to lead in their markets and shape the future of technology.</p>
+            </div>
+        </div>
+        <img class=" himg" src="image.webp" alt="">
+        <br>
+    </header>
+    <br>
+    <div class="second-section">
+        <br>
+        <h2 class="display-4" style="text-align: center; color: black;">Team</h2>
+        <main>
+            <div class="Team">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="image.png" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="image.png" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="image.png" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="image.png" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="image.png" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <br>
+        <div class="timeline">
+            <br>
+            <div class="container">                      
+                <div class="row text-center justify-content-center mb-5">
+                    <div class="col-xl-6 col-lg-8">
+                        <h2 class="font-weight-bold">Company Evolution</h2>
+                        <p class="text-muted">We’re very proud of the path we’ve taken. Explore the history that made us the company we are today.</p>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col">
+                        <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                                    <div class="inner-circle"></div>
+                                    <p class="h6 mt-3 mb-1">2003</p>
+                                    <p class="h6 text-muted mb-0 mb-lg-0">Favland Founded</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
+                                    <div class="inner-circle"></div>
+                                    <p class="h6 mt-3 mb-1">2004</p>
+                                    <p class="h6 text-muted mb-0 mb-lg-0">Launched Trello</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
+                                    <div class="inner-circle"></div>
+                                    <p class="h6 mt-3 mb-1">2005</p>
+                                    <p class="h6 text-muted mb-0 mb-lg-0">Launched Messanger</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
+                                    <div class="inner-circle"></div>
+                                    <p class="h6 mt-3 mb-1">2010</p>
+                                    <p class="h6 text-muted mb-0 mb-lg-0">Open New Branch</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step mb-0">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
+                                    <div class="inner-circle"></div>
+                                    <p class="h6 mt-3 mb-1">2020</p>
+                                    <p class="h6 text-muted mb-0 mb-lg-0">In Fortune 500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

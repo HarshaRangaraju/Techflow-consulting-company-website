@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body{
+            padding: 30px;
+        }
+        .main-services{
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .main-services div:hover{
+            font-size: larger;
+            background-color: rgb(172, 176, 180);
+        }
+
+        .main-services div{
+            margin: 10px;
+            padding: 10px;
+        }
+        .main-services img{
+            height: 250px;
+        }
+        .faq-container {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        .card-header {
+            cursor: pointer;
+        }
+        .card-header i {
+            transition: transform 0.2s;
+        }
+        .card-header.collapsed i {
+            transform: rotate(0deg);
+        }
+        .card-header:not(.collapsed) i {
+            transform: rotate(45deg);
+        }
+        .faq-container{
+            background-color: #EEEEEE;
+        }
+        @media(max-width:430px){
+            .main-services div{
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="heading display-4">Services</h2>
+            </div>
+        </div>
+    </header>
+    
+    <br>
+    <div class="main-services">
+        <div class="card " style="width: 18rem;">
+            <img class="card-img-top" src="image.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">IT Strategy and Consulting</h5>
+              <p class="card-text">Provides guidance on aligning technology initiatives with business goals, helping organizations develop a strategic technology roadmap that enhances efficiency and growth.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="image.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Digital Transformation</h5>
+              <p class="card-text">Offers development of custom software applications tailored to specific business needs, including web and mobile apps, to improve workflows and user engagement.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="image.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Software Development and Custom Solutions</h5>
+              <p class="card-text">Offers development of custom software applications tailored to specific business needs, including web and mobile apps, to improve workflows and user engagement.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="image.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Cloud Services and Migration</h5>
+              <p class="card-text">Supports migration to cloud platforms like AWS, Azure, or Google Cloud, enabling scalable, cost-effective solutions and improving data accessibility and security.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="image.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Cyber security</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="image.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Cryptography free services</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+    </div>
+    <br>
+    <main>
+        <div class="container faq-section">
+            <h3 class="display-4">faq-section</h2>
+                <div class="container my-5 faq-container">
+                    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+                    <div id="faqAccordion">
+                        <div class="card">
+                            <div class="card-header collapsed d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <span>What is the return policy?</span>
+                                <i class="fa fa-plus"></i>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Our return policy allows returns within 30 days of purchase. Please ensure the item is in its original condition.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header collapsed d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span>How long does shipping take?</span>
+                                <i class="fa fa-plus"></i>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Shipping typically takes 5-7 business days, depending on your location.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header collapsed d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span>How can I track my order?</span>
+                                <i class="fa fa-plus"></i>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    You can track your order using the tracking number provided in your shipping confirmation email.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $('#faqAccordion .card-header').on('click', function() {
+            const isCollapsed = $(this).hasClass('collapsed');
+            $('#faqAccordion .card-header').addClass('collapsed').find('i').removeClass('fa-minus').addClass('fa-plus');
+            if (!isCollapsed) {
+                $(this).find('i').removeClass('fa-plus').addClass('fa-minus');
+            } else {
+                $(this).find('i').removeClass('fa-minus').addClass('fa-plus');
+            }
+        });
+        
+        $('#faqAccordion .collapse').each(function() {
+            const header = $(this).prev('.card-header');
+            if ($(this).hasClass('show')) {
+                header.find('i').removeClass('fa-plus').addClass('fa-minus');
+                header.removeClass('collapsed');
+            } else {
+                header.find('i').removeClass('fa-minus').addClass('fa-plus');
+                header.addClass('collapsed');
+            }
+        });
+    </script>
+        
+
+
+</body>
+</html>
